@@ -2,29 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My Homework Assignments</title>
+  <title>Express-Navbar</title>
   <style>
-    nav {
-      display: flex;
-      justify-content: space-around;
-      background-color: #eee;
-      padding: 1rem;
-    }
-    nav a {
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0 1rem;
-    }
+
+body {
+    background-color: lightgray; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+.navbar {
+  top: 0;
+  z-index:1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: gray;
+  color: black;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    
+}
+.navbar-title{
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing:1px;
+    
+}
+.navbar-links{
+  display:flex;
+  list-style:none;
+     
+}
+.navbar-links li{
+  margin-left: 2rem;
+     
+}
+
+.navbar-links a {
+  color:black;
+  text-decoration:none;
+  font-weight: bold;
+ 
+    
+}
+
+
+.section {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+     
+}
+
+.content{
+  margin-top: -100px;
+  max-width: 800px;
+  padding:2rem;
+  background-color: rgb(92, 75, 65);
+  border-radius:10px;
+    
+}
+.content h1{
+  font-size: 3rem;
+  margin-bottom:1rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+}
+.content p{
+  font-size: 22px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
   </style>
 </head>
 <body>
-  <nav>
-    <a href="/climate-crisis">Climate Crisis</a>
-    <a href="/typesetting">Typesetting</a>
-    <a href="/four-algorithms">Four Algorithms</a>
-  </nav>
 
-  <h1>Welcome!</h1>
-  <p>Click on one of the links above to visit the corresponding route.</p>
+    <nav class="navbar">
+        <div class="navbar-title">Express-Navbar</div>
+        <ul class="navbar-links">
+          <li><a href="/climate-crisis">Climate Crisis</a>   </li>
+          <li><a href="/typesetting">Typesetting</a>   </li>
+          <li><a href="/four-algorithms">Four Algorithms</a>  </li>
+        
+        </ul>
+      </nav>
+    
+
+      <header class="section">
+        <div class="content">
+          <h1>Welcome!</h1>
+          <p>Click on one of the links above to visit the corresponding route.</p>
+        </div>
+      </header>
+    
+  
+
+  
+  
 </body>
 </html>
